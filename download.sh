@@ -52,8 +52,8 @@ elif  [ $FILE == "afhq-v2-dataset" ]; then
     ZIP_FILE=./data/afhq_v2.zip
     mkdir -p ./data
     wget -N $URL -O $ZIP_FILE
-    zip -FF afhq_v2.zip --out repaired.zip
-    unzip repaired.zip
+    zip -FF ./data/afhq_v2.zip --out ./data/repaired.zip
+    unzip ./data/repaired.zip
 
 
 else
